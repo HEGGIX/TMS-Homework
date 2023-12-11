@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="data-person">Данные получателя</h2>
+        <form class="data-ipn__container">
+            <input class="data-inp" type="text" name="lastname" placeholder="Фамилия">
+            <input class="data-inp" type="text" name="name" placeholder="Имя">
+            <input class="data-inp" type="text" name="surname" placeholder="Отчество">
+            <input class="data-inp" type="tel" name="tel" placeholder="Номер телефона">
+            <p class="tel-info">По этому номеру телефона мы с вами свяжемся для подтверждения заказа</p>
+            <input type="email" name="email" placeholder="E-mail">
+            <p class="email-info">На эту почту вам придёт письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+            <form action="" class="newsletter-inp__container">
+                <label for="newsletter">Подписаться на рассылку новинок и акций</label>
+                <input type="checkbox" name="newsletter" id="newsletter" checked>
+            </form>
+        </form>
+        <h2 class="pay-title">Способ оплаты</h2>
+        <form action="">
+            <form action="">
+                <label for="pay-offline">Оплата при получении наличными или картой</label>
+                <input type="radio" name="pay-offline" id="pay-offline" >
+            </form>
+            <form action="">
+                <label for="pay-online">Оплата банковской картой онлайн</label>
+                <input type="radio" name="pay-online" id="pay-online" >
+            </form>
+        </form>
+    </div>
+</body>
+</html>

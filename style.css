@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 692px;
+    margin-left: 17px;
+}
+
+.data-inp{
+    width: 220px;
+    height: 50px;
+    border: 1px solid #BDBDBD;
+    border-radius: 83px;
+}
+
+.data-inp::placeholder{
+    margin-left: 24px;
+}
