@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -19,19 +19,28 @@
             <input class="email-inp" type="email" name="email" placeholder="E-mail">
             <p class="email-info">На эту почту вам придёт письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
             <form action="" class="newsletter-inp__container">
-                <label class="newsletter-label" for="newsletter">Подписаться на рассылку новинок и акций</label>
-                <input class="newsletter-inp" type="checkbox" name="newsletter" id="newsletter" checked>
+                <label class="newsletter-label" for="newsletter">
+                    <input class="newsletter-inp" type="checkbox" name="newsletter" id="newsletter" checked>
+                    <span class="fake-checkbox"></span>
+                    <span class="checkbox-text">Подписаться на рассылку новинок и акций</span>
+                </label>
             </form>
         </div>
         <h2 class="pay-title">Способ оплаты</h2>
         <div class="pay-form__container">
             <form class="pay-form" action="">
-                <label class="pay-label" for="pay-offline">Оплата при получении наличными или картой</label>
-                <input class="pay-inp" type="radio" name="pay-offline" id="pay-offline" >
+                <label class="pay-label" for="pay-offline">
+                    <input class="pay-inp" type="radio" name="pay-offline" id="pay-offline">
+                    <span class="fake-radio"></span>
+                    <span class="pay-text">Оплата при получении наличными или картой</span>
+                </label>
             </form>
             <form class="pay-form" action="">
-                <label class="pay-label" for="pay-online">Оплата банковской картой онлайн</label>
-                <input class="pay-inp" type="radio" name="pay-online" id="pay-online" >
+                <label class="pay-label" for="pay-online">
+                    <input class="pay-inp" type="radio" name="pay-online" id="pay-online">
+                    <span class="fake-radio"></span>
+                    <span class="pay-text">Оплата банковской картой онлайн</span>
+                </label>
             </form>
         </div>
     </div>

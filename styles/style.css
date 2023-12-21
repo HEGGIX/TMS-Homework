@@ -69,28 +69,50 @@ body{
 
 .newsletter-inp__container{
     height: 30px;
+}
+
+.newsletter-label{
     display: flex;
     align-items: center;
 }
 
-.newsletter-inp{
-    order: 1;
-    margin-right: 16px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #976464;
-    border-radius: 6.6px;
-}
-
-.newsletter-inp:checked{
-    color: #976464;
-}
-
-.newsletter-label{
+.checkbox-text{
     font-family: 'Montserrat', sans-serif;
     order: 2;
     font-size: 16px;
     line-height: 20px;
+    margin-left: 16px;
+}
+
+.newsletter-inp{
+   display: none;
+}
+
+.fake-checkbox{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #976464;
+    border-radius: 6.6px;
+    position: relative;
+}
+
+.fake-checkbox::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background: url(/styles/img/checked.png);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.newsletter-inp:checked + .fake-checkbox::before{
+    opacity: 1;
 }
 
 .pay-title{
@@ -102,23 +124,54 @@ body{
 
 .pay-form{
     height: 31px;
+}
+
+.pay-label{
     display: flex;
     align-items: center;
 }
 
-.pay-label{
+.pay-label:last-child{
+    margin-top: 8px;
+}
+
+.pay-text{
     font-family: 'Montserrat', sans-serif;
     order: 2;
+    margin-left: 16px;
 }
 
 .pay-inp{
-    order: 1;
-    height: 29px;
-    width: 29px;
-    border: 1px solid #976464;
-    margin-right: 16px;
+    display: none;
 }
-
-
+ 
+.fake-radio{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #976464;
+    border-radius: 6.6px;
+    position: relative;
+    border-radius: 50%;
+}
+ 
+.fake-radio::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background: url(/styles/img/radio.png);
+    opacity: 0;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+ 
+.pay-inp:checked + .fake-radio::before{
+    opacity: 1;
+}
 
 
